@@ -9,8 +9,10 @@ namespace Entity.Entity
 {
     public class Voiture : Vehicule
     {
-
         private int _puissance;
+
+
+        public Voiture() { }
 
         public Voiture(string marque, string modele, int numero, int puissance) : base (marque, modele, numero)
         {
@@ -25,7 +27,7 @@ namespace Entity.Entity
 
         public override string ToString()
         {
-            return base.ToString() + $" / PUISSANCE : {_puissance}";
+            return base.ToString() + $" / PUISSANCE : {_puissance}cv";
         }
     }
 }

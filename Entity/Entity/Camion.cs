@@ -11,6 +11,9 @@ namespace Entity.Entity
     {
         private int _poids;
 
+
+        public Camion() { }
+
         public Camion(string marque, string modele, int numero, int poids) : base(marque, modele, numero)
         {
             _poids = poids;
@@ -23,7 +26,7 @@ namespace Entity.Entity
 
         public override string ToString()
         {
-            return base.ToString() + $" | POIDS : {_poids}";
+            return base.ToString() + $" | POIDS : {_poids}kg";
         }
 
     }
